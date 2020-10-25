@@ -2,6 +2,107 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  min-height: 80vh;
+  width: 35rem;
+  padding: 1rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker > img {
+  width: 20rem;
+  z-index: 2;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #bfe9ff,
+    #ff6e7f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #bfe9ff,
+    #ff6e7f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info > h1 {
+  font-size: 3rem;
+}
+
+.info > h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: gray;
+  padding: 2rem 0rem;
+  font-weight: lighter;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sizes > button {
+  background: none;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: gray;
+}
+
+button.active {
+  background: gray;
+  color: #fff;
+}
+
+.purchase {
+  margin-top: 5rem;
+}
+
+.purchase > button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
 }
